@@ -1,0 +1,76 @@
+$dark-blue: #0000cd;
+$black: #000000;
+
+.presentation-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 95vh;
+    margin: 0 10px;
+    background-image: linear-gradient(to right bottom,
+     rgba(0, 0, 205, 0.5), 
+     rgba(0, 0, 0, 0.8)), 
+    url(../../images/building.png);
+    background-size: cover;
+    background-position: top;    
+}
+
+.title-container {    
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+    left: 12%;
+
+    .hello {
+        color: #87ceeb;
+    }
+}
+
+.first-title {
+    animation: moveInLeft 2s;
+    
+}
+
+.second-title {
+    animation: moveInRight 2s;    
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+h1 {
+    letter-spacing: 14px;
+    font-size: 55px;
+}
+
+

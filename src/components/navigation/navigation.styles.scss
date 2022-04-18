@@ -1,0 +1,33 @@
+$main-color: #000;
+$font-color: #fff;
+
+.navigation-container {
+    height: 45px;
+    display: flex;    
+    justify-content: space-between;
+    background-color: $main-color;
+
+    .navigation-link-container {
+        width: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+}
+
+a { 
+    color: $font-color;
+    margin-right: 10px;
+    font-size: 13px;
+    font-weight: 500;
+
+    &:hover {
+        margin-bottom: 5px;
+        border-bottom: solid 2px orange;
+    }
+}
