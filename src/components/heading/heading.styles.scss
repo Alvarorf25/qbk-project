@@ -1,0 +1,20 @@
+.portfolio-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 35px;    
+}
+
+.portfolio-title {    
+    font-size: 55px;
+    letter-spacing: 0;
+    margin-bottom: 15px;
+}
+
+.underlined {     
+    width: 35%;
+    height: 3px;
+    margin-bottom: 20px;
+    background-color: #dbdb00;
+}

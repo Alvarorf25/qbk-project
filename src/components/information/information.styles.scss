@@ -1,0 +1,101 @@
+.section-info {
+    background-color: #212121;
+    color: #fff;
+    display: flex;    
+    flex-direction: column;
+    padding-top: 45px;
+}
+
+.info-container {
+    display: flex;
+}
+
+@mixin space {
+    padding-top: 20px;
+    padding-left: 30px;    
+    height: 272px;    
+}
+
+//ABOUT ME SECTION
+.title {
+    @include space;    
+    font-size: 55px;
+    letter-spacing: 0;
+    width: 35%;
+}
+
+.content {
+    @include space;    
+    width: 63%;
+}
+
+li {
+    list-style: none;
+    font-size: 16px;
+    padding-bottom: 30px;
+    display: flex;
+}
+
+.arrow-icon {
+    background-image: url('../../svg-icoms/arrow-forward.svg');
+    background-size: cover;    
+    width: 15px;
+    height: 15px;
+    margin-top: 2px;
+    margin-right: 20px;
+    filter: invert(78%) sepia(69%) saturate(707%) hue-rotate(8deg) brightness(97%) contrast(101%)
+}
+
+//RESUME SECTION
+.resumen-title {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.resume-link {
+    display: inline-flex;
+    width: 17%;
+    height: 17%;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 5px 5px;
+    margin: 15px;
+    border: solid 0.5px #dbdb00;
+    border-radius: 4px;
+    color: #dbdb00;    
+    text-align: center;
+    font-weight: 500;
+
+    &:hover {
+        background-color: #222831;
+        border: solid 0.5px #f7f703;
+    }
+}
+
+.resume-icon {
+    background-image: url(../../svg-icoms/icon-document.svg);
+    background-size: cover;
+    width: 22px;
+    height: 22px;
+    filter: invert(78%) sepia(69%) saturate(707%) hue-rotate(8deg) brightness(97%) contrast(101%);
+}
+
+//SKILL SECTION
+
+.icon-image {
+    margin-right: 10px;
+    width: 100px;
+    height: 100px;
+    
+    
+    &:hover {        
+        opacity: 0.8;
+    }
+}
+
+.white {
+    color: white;
+}

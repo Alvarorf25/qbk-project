@@ -1,0 +1,49 @@
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-names {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin form {
+    border: solid 1px #dbdb00;
+    background-color: black;
+    border-radius: 3px;
+    padding: 7px;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;    
+}
+
+.input-names {
+    @include form;
+    width: 295px;
+    height: 45px;    
+}
+
+.input-email {
+    @include form;
+    width: 600px;
+    height: 45px;
+    margin: 20px 0px;
+}
+
+.input-message {
+    @include form;
+    width: 600px;
+    height: 200px;
+    margin-bottom: 20px;
+    resize: none;        
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-text-fill-color: #fff;
+    -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+    transition: background-color 5000s ease-in-out   
+}

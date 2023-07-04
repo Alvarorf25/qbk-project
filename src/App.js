@@ -1,25 +1,23 @@
 import logo from './logo.svg';
-//import Navigation from '../src/components/navigation/navigation.component.jsx';
-//import Presentation from './components/presentation/presentation.component';
+import Navigation from '../src/components/navigation/navigation.component.jsx';
+import Presentation from './components/presentation/presentation.component';
 
-//import ConstructionPage from './construction-page/construction-page.component';
-
-import './App.scss';
-
-import image1 from './images/ds-png.png';
-import image2 from './images/qbk-img.png';
+import Information from './components/information/information.component';
+import PortfolioSection from './components/portfolio/portfolio.component';
+import ContactComponent from './components/contact-section/contact.component';
 
 
+
+//import FirstPage from './first-page/first-page';
 
 function App() {
   return (
-    <div className='App'>      
-      <div className='prueba'>
-        <img src={image2} className='image2' />
-        <div className='line'/>
-        <img src={image1} className='image1' />
-        <span className='subtitle'>in process...</span>
-      </div>
+    <div>      
+      <Navigation />
+      <Presentation />
+      <Information />
+      <PortfolioSection />
+      <ContactComponent />
     </div>
   );
 }
@@ -29,4 +27,5 @@ export default App;
 /*
   <Navigation />
   <Presentation />
+  <FirstPage />  
 */

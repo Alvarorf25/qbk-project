@@ -1,0 +1,42 @@
+// CARD STYLES
+
+.card-container {
+    display: flex;
+    width: 90%;
+    border-radius: 5px;
+    background-image: linear-gradient(to right bottom, rgb(122 117 125 / 50%), rgb(38 12 12 / 80%));
+    box-shadow: 10px 11px 11px -11px yellow;
+    overflow: hidden;
+    margin-bottom: 60px;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 10px 11px 22px -11px yellow;
+    }
+}
+
+.image-box {
+    display: flex;
+    width: 40%;
+    
+}
+
+.image {
+    width: 100%;
+}
+
+.info-project {
+    width: 60%;
+    padding: 20px;
+}
+
+.project-title {
+    margin-bottom: 20px;
+    color: #dbdb00;
+    font-size: 30px;
+}
+
+.description {
+    color: #fff;
+    font-size: 14px;
+}

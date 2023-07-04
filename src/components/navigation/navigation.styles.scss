@@ -20,14 +20,29 @@ $font-color: #fff;
     height: 45px;
 }
 
-a { 
+.nav-link { 
+    position: relative;
     color: $font-color;
-    margin-right: 10px;
+    margin-right: 25px;
     font-size: 13px;
     font-weight: 500;
+    padding-bottom: 3.5px;
+    cursor: pointer;
 
-    &:hover {
-        margin-bottom: 5px;
-        border-bottom: solid 2px orange;
+    &::after {        
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1.5px;
+        left: 0.2px;
+        bottom: 0.2px;
+        background: #dbdb00;
+        transform: scale(0, 1);
+        transform-origin: 0% 100%;
+        transition: transform 0.3s ease;        
+    }
+
+    &:hover:after {
+        transform: scale(1, 1);
     }
 }
