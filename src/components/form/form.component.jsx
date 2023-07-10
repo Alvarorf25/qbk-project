@@ -9,7 +9,7 @@ const FormComponent = () => {
             </div>
             <input className='input-email' type="email" name="email" placeholder='Email address' required />
             <textarea rows='5' className='input-message' type="text" name="message" placeholder='Message' required />
-            <button type="submit">Send</button>
+            <button className='btn' type="submit">Send</button>
         </form>
     )
 };

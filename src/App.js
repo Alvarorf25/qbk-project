@@ -24,8 +24,6 @@ function App() {
 
 export default App;
 
-/*
-  <Navigation />
-  <Presentation />
+/*  
   <FirstPage />  
 */
