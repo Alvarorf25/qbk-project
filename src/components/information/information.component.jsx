@@ -29,9 +29,9 @@ const Information = () => {
             </div>
 
             <div className='info-container'>
-                <div className='title'>Resumé</div>
-                <div className='content'>
-                    <h3 className='resumen-title'>Check my resumé in the link below.</h3>                                       
+                <div className='resume-title'>Resumé</div>
+                <div className='resume-content'>
+                    <h3 className='resume-sentence'>Check my resumé in the link below.</h3>                                       
                     <div className='resume-link'>
                         resumé
                         <span className='resume-icon'/>

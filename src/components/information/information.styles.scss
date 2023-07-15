@@ -1,5 +1,6 @@
 .section-info {
-    background-color: #212121;
+    background-color: black;
+    background-image: linear-gradient(to right bottom, rgb(122 117 125 / 50%), rgb(38 12 12 / 80%));
     color: #fff;
     display: flex;    
     flex-direction: column;
@@ -12,20 +13,25 @@
 
 @mixin space {
     padding-top: 20px;
-    padding-left: 30px;    
-    height: 272px;    
+    padding-left: 30px; 
 }
 
-//ABOUT ME SECTION
-.title {
-    @include space;    
+@mixin letterStyle {
     font-size: 55px;
     letter-spacing: 0;
     width: 35%;
 }
 
+//ABOUT ME SECTION
+.title {
+    @include space;       
+    @include letterStyle;
+    height: 272px;
+}
+
 .content {
-    @include space;    
+    @include space;
+    height: 272px;      
     width: 63%;
 }
 
@@ -47,7 +53,20 @@ li {
 }
 
 //RESUME SECTION
-.resumen-title {
+
+.resume-title {
+    @include space;       
+    @include letterStyle;
+    height: 170px;
+}
+
+.resume-content {
+    @include space;
+    height: 170px;      
+    width: 63%;
+}
+
+.resume-sentence {
     display: block;
     font-size: 30px;
     margin-bottom: 10px;
@@ -55,8 +74,8 @@ li {
 
 .resume-link {
     display: inline-flex;
-    width: 17%;
-    height: 17%;
+    width: 105px;
+    height: 37px;
     justify-content: space-evenly;
     align-items: center;
     font-size: 15px;

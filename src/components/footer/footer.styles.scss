@@ -1,0 +1,47 @@
+.footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    background-color: black;
+}
+
+.arrow-box {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    box-shadow: inset -12px 0px 11px -11px yellow;
+    //animation: infiniteRotationY 1s both infinite;;
+}
+
+.footer-arrow {
+    position: absolute;
+    top: 92px;
+    animation: infiniteRotationY 1s both infinite;;
+}
+
+@keyframes infiniteRotationY {
+    from {
+        transform: rotateY(-90deg);
+    }
+
+    to {
+        transform: rotateY(270deg);
+    }    
+}
+
+
+
+.name {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Ubuntu';
+    text-transform: uppercase;
+}
+.copyrights {
+    font-size: 11px;
+}

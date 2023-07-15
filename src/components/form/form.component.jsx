@@ -2,7 +2,8 @@ import './form.styles.scss';
 
 const FormComponent = () => {
     return (
-        <form className='form' action="https://formsubmit.co/your@email.com" method="POST">
+        <form className='form' action="https://formsubmit.co/morales.alvarorf@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New customer email!" />
             <div className='form-names'>
                 <input className='input-names' type="text" name="firstName" placeholder='First Name' required />
                 <input className='input-names' type="text" name="lastName" placeholder='Last Name' required />
