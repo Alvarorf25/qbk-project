@@ -1,16 +1,14 @@
-import house from '../../images/house1.jpg';
-
 import './card-project.styles.scss';
 
-const CardProject = () => {
+const CardProject = ({title, img, description}) => {
     return (
         <div className='card-container'>
             <div className='image-box'>
-                <img className='image' src={house} alt='house'/>
+                <img className='image' src={img} alt={title} />
             </div>
             <div className='info-project'>
-                <h3 className='project-title'>Project Name</h3>
-                <p className='description'>project information to be specified</p>
+                <h3 className='project-title'>{title}</h3>
+                <p className='description'>{description}</p>
             </div>
         </div>
     )
