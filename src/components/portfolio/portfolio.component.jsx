@@ -14,7 +14,7 @@ const PortfolioSection = () => {
             {
                 data.map(project => {
                     return (
-                        <CardProject id={project.id} {...project} />
+                        <CardProject key={project.id} {...project} />
                     )
                 })
             }         
