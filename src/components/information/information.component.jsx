@@ -1,7 +1,5 @@
 import './information.styles.scss';
-import autoCadLogo from '../../images/autocad-logo-100.png';
-import sketchupLogo from '../../images/Sketchup-logo.png';
-import photoshopLogo from '../../images/photoshop-logo-144.png';
+import pdfResume from '../../resume/CV-Alvaro-Morales-Front-End-Developer(English).pdf';
 
 const Information = () => {
     return (
@@ -32,10 +30,10 @@ const Information = () => {
                 <div className='resume-title'>Resumé</div>
                 <div className='resume-content'>
                     <h3 className='resume-sentence'>Check my resumé in the link below.</h3>                                       
-                    <div className='resume-link'>
+                    <a className='resume-link' tabIndex='0' href={pdfResume} target='_blank'>
                         resumé
                         <span className='resume-icon'/>
-                    </div>                    
+                    </a>                    
                 </div>
             </div>
 
