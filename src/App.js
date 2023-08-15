@@ -8,7 +8,7 @@ import ContactComponent from './components/contact-section/contact.component';
 import FooterSection from './components/footer/footer.component';
 
 
-//import FirstPage from './first-page/first-page';
+//import FirstPage from './pages/first-page/first-page.jsx';
 
 function App() {
   return (

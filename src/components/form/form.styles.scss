@@ -36,7 +36,19 @@
     width: 600px;
     height: 200px;
     margin-bottom: 20px;
-    resize: none;        
+    resize: none;
+    
+    &:focus {
+        outline: none;
+        border-color: #DBF764;
+        box-shadow: 0 0 8px #DBF764
+    }
+}
+
+input:focus {
+    outline: none;
+    border-color: #DBF764;
+    box-shadow: 0 0 8px #DBF764
 }
 
 input:-webkit-autofill,

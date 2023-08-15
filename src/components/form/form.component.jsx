@@ -14,7 +14,7 @@ const FormComponent = () => {
 
     return (
         <form className='form' action="https://formsubmit.co/morales.alvarorf@gmail.com" method="POST">
-            <input type="hidden" name="_subject" value={`New email from ${person.firstName} ${person.lastName}!`} />
+            <input type="hidden" name="_subject" value={`New email from ${person.firstName} ${person.lastName}!`} />            
             <input type="hidden" name="_captcha" value="true" />
             <div className='form-names'>
                 <input className='input-names' 
