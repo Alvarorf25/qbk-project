@@ -1,14 +1,15 @@
 .footer {
-    position: relative;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 35vh;
+    height: 25vh;
     background-color: black;
 }
 
 .arrow-box {
+    position: relative;
     width: 25px;
     height: 25px;
     margin-bottom: 15px;
@@ -19,7 +20,8 @@
 
 .footer-arrow {
     position: absolute;
-    top: 92px;
+    right: 3px;
+    top: 2px;
     animation: infiniteRotationY 1s both infinite;;
 }
 

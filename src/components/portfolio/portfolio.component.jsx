@@ -9,7 +9,7 @@ const PortfolioSection = () => {
 
     const title = 'Portfolio';
     return (
-        <section className='portfolio-section'>
+        <section className='portfolio-section' id='PortfolioSection'>
             <Heading title={title} />
             {
                 data.map(project => {

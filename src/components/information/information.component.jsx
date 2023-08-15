@@ -3,7 +3,7 @@ import pdfResume from '../../resume/CV-Alvaro-Morales-Front-End-Developer(Englis
 
 const Information = () => {
     return (
-        <section className="section-info">
+        <section className="section-info" id='AboutSection'>
             <div className='info-container'>
                 <div className='title'>About me</div>
                 <div className='content'>
