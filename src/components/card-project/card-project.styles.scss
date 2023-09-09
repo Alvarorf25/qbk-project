@@ -2,7 +2,7 @@
 
 .card-container {
     display: flex;
-    width: 90%;
+    width: 95%;
     height: 300px;
     border-radius: 5px;
     background-image: linear-gradient(to right bottom, rgb(122 117 125 / 50%), rgb(38 12 12 / 80%));
@@ -18,12 +18,12 @@
 
 .image-box {
     display: flex;
-    width: 40%;
-    
+    width: 40%;    
 }
 
 .image {
     width: 100%;
+    height: auto;
 }
 
 .info-project {
@@ -32,7 +32,7 @@
 }
 
 .project-title {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: #dbdb00;
     font-size: 30px;
 }

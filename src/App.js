@@ -7,6 +7,8 @@ import PortfolioSection from './components/portfolio/portfolio.component';
 import ContactComponent from './components/contact-section/contact.component';
 import FooterSection from './components/footer/footer.component';
 
+import './index.scss';
+
 
 //import FirstPage from './pages/first-page/first-page.jsx';
 

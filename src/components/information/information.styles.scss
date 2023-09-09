@@ -9,7 +9,11 @@
 
 .info-container {
     display: flex;
-}
+    flex-direction: row;
+    height: 250px
+};
+
+
 
 @mixin space {
     padding-top: 20px;
@@ -26,13 +30,11 @@
 
 .title {
     @include space;       
-    @include letterStyle;
-    height: 272px;
+    @include letterStyle;    
 }
 
 .content {
-    @include space;
-    height: 272px;      
+    @include space;    
     width: 63%;
 }
 
@@ -54,18 +56,6 @@ li {
 }
 
 //RESUME SECTION
-
-.resume-title {
-    @include space;       
-    @include letterStyle;
-    height: 170px;
-}
-
-.resume-content {
-    @include space;
-    height: 170px;      
-    width: 63%;
-}
 
 .resume-sentence {
     display: block;
@@ -93,7 +83,8 @@ li {
 
     &:hover {
         background-color: #222831;
-        border: solid 0.5px #f7f703;
+        border: solid 0.5px #ffff12;
+        color: #ffff12;
     }
 }
 
@@ -120,4 +111,57 @@ li {
 
 .white {
     color: white;
+}
+
+//MEDIA QUERIES
+
+@media screen and (max-width: 66.25em) {  //1060px /16px = 66.25
+    .info-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .content {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 56.25em) {  //900px /16 = 56.25
+    .section-info {
+        padding-top: 35px;
+    }
+
+    .title {
+        font-size: 39px;
+    }
+
+    li {
+        font-size: 15px;
+        padding-bottom: 25px;
+    }
+
+    .resume-sentence {
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 37.5em) {  //600px /16 = 37.5em
+    .title {
+        font-size: 35px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    .resume-sentence {
+        font-size: 18px;
+    }
+
+    .icon-image {
+        width: 80px;
+        height: 80px;
+    }
+    
 }

@@ -1,3 +1,10 @@
+.profile-picture {
+    margin-bottom: 36px;
+    width: 115px;
+    height: 115px;
+    border-radius: 50px;
+}
+
 .contact-box {
     display: flex;
     flex-direction: column;
@@ -9,7 +16,7 @@
     border-radius: 5px;
 }
 
-.contact-text {
+.contact-primary-text {
     color: #fff;
     font-size: 16px;
     line-height: 140%;
@@ -26,4 +33,26 @@
     height: 0.1px;
     background-color: #dbdb00;
     margin: 15px 0px;
+}
+
+.contact-secondary-text {
+    color: #fff;
+    font-size: 15.5px;
+    margin: 11px;
+}
+
+.container-contact-logos {
+    display: flex;    
+}
+
+.contact-logos {
+    width: 35px;
+    height: 35px;
+    
+    filter: invert(72%) sepia(60%) saturate(676%) hue-rotate(12deg) brightness(101%) contrast(105%);
+
+    &:hover {
+        filter: invert(72%) sepia(60%) saturate(676%) hue-rotate(12deg) brightness(150%) contrast(105%);
+    }
+      
 }

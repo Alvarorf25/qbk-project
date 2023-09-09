@@ -27,8 +27,8 @@ const Information = () => {
             </div>
 
             <div className='info-container'>
-                <div className='resume-title'>Resumé</div>
-                <div className='resume-content'>
+                <div className='title'>Resumé</div>
+                <div className='content'>
                     <h3 className='resume-sentence'>Check my resumé in the link below.</h3>                                       
                     <a className='resume-link' tabIndex='0' href={pdfResume} target='_blank'>
                         resumé
