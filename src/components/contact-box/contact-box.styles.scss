@@ -56,3 +56,23 @@
     }
       
 }
+
+//QUERY
+
+@media screen and (max-width: 50em) { 
+    .contact-box {
+        width: 96%;
+    }
+
+    .thin-line {
+        width: 107.5%;
+    }
+
+    .contact-primary-text { 
+        font-size: 14px;
+    }
+
+    .contact-secondary-text { 
+        font-size: 13.5px;
+    }
+}

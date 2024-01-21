@@ -72,4 +72,10 @@ h1 {
     font-size: 55px;
 }
 
+//MEDIA QUERY
 
+@media screen and (max-width: 50em) {
+    .presentation-container {
+        margin: 0;
+    }
+}
