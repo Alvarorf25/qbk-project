@@ -9,19 +9,19 @@ const Information = () => {
                 <div className='content'>
                     <li>
                         <span className='arrow-icon' />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloribus suscipit hic veritatis quos.
+                        Bachelor's degree focused in Architecture from Universidad Central de Venezuela.
                     </li>
                     <li>
                         <span className='arrow-icon' />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti magnam laboriosam optio dicta ullam.
+                        Experienced Senior Project Designer with a demonstrated history of working in Projects and Construction Site.
                     </li>
                     <li>
                         <span className='arrow-icon'/>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, dolor illo.
+                        Strong program and project management professional.
                     </li>
                     <li>
                         <span className='arrow-icon' />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laboriosam.
+                        More than 8 years experience in Venezuela and 4 years and so in USA specifically in Florida.
                     </li>
                 </div>
             </div>

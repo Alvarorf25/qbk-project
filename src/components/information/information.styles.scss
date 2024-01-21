@@ -127,6 +127,10 @@ li {
 }
 
 @media screen and (max-width: 56.25em) {  //900px /16 = 56.25
+    .info-container:last-child {
+        padding-bottom: 65px;
+    }
+
     .section-info {
         padding-top: 35px;
     }
@@ -148,11 +152,16 @@ li {
 
 @media screen and (max-width: 37.5em) {  //600px /16 = 37.5em
     .title {
+        width: auto;
+        color: #dbdb00;
         font-size: 35px;
     }
 
     li {
         font-size: 14px;
+        &::before {
+            content: "\00BB"
+        }
     }
 
     .resume-sentence {
@@ -163,5 +172,16 @@ li {
         width: 80px;
         height: 80px;
     }
-    
+
+    .arrow-icon {
+        background-image: none;
+        
+    }    
+}
+
+@media screen and (max-width: 25em) {
+    .icon-image {
+        width: 70px;
+        height: 70px;
+    }
 }

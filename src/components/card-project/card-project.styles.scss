@@ -43,3 +43,31 @@
     line-height: 170%;
     text-align: justify;
 }
+
+//MEDIA QUERY
+
+@media screen and (max-width: 56.25em) {
+    .card-container {
+        flex-direction: column;
+        width: 90%;
+        height: 55%;
+    }
+
+    .image-box {
+        width: 100%;
+    }
+
+    .info-project {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    .description {
+        font-size: 12.2px;
+    }
+
+    .info-project {
+        padding: 15px;
+    }    
+}
