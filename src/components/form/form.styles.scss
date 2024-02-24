@@ -8,7 +8,7 @@
     justify-content: space-between;
 }
 
-@mixin form {
+@mixin form-style {
     border: solid 0.2px #dbdb00;
     background-color: black;
     border-radius: 3px;
@@ -19,20 +19,20 @@
 }
 
 .input-names {
-    @include form;
+   @include form-style;
     width: 295px;
     height: 45px;    
 }
 
 .input-email {
-    @include form;
+    @include form-style;
     width: 600px;
     height: 45px;
     margin: 20px 0px;
 }
 
 .input-message {
-    @include form;
+    @include form-style;
     width: 600px;
     height: 200px;
     margin-bottom: 20px;
@@ -80,5 +80,21 @@ input:-webkit-autofill:active {
     &:active {
         transform: translateY(-1px);
         box-shadow: 0px 10px 10px -11px yellow;
+    }
+}
+
+//MEDIA QUERY
+
+@media screen and (max-width: 37.5em) {
+    .form-names {
+        width: 95vw;
+    }
+
+    .input-email {
+        width: 95vw;
+    }
+
+    .input-message {
+        width: 95vw;
     }
 }
