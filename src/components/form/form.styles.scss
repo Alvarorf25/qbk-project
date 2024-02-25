@@ -1,11 +1,13 @@
 .form {
     display: flex;
     flex-direction: column;
+    //align-items: center;
+    justify-content: center;
 }
 
 .form-names {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 @mixin form-style {
@@ -85,16 +87,28 @@ input:-webkit-autofill:active {
 
 //MEDIA QUERY
 
+@mixin width-query {
+    width: 95vw;
+}
+
 @media screen and (max-width: 37.5em) {
     .form-names {
-        width: 95vw;
+        @include width-query;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-names {
+        @include width-query;
+        margin: 10px;
     }
 
     .input-email {
-        width: 95vw;
+        @include width-query;
+        margin: 10px 0px 20px;
     }
 
     .input-message {
-        width: 95vw;
+        @include width-query;
     }
 }

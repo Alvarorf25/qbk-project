@@ -71,3 +71,9 @@
         padding: 15px;
     }    
 }
+
+@media screen and (max-width: 25em) {
+    .description {
+        font-size: 11.2px;
+    } 
+}

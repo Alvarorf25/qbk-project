@@ -79,3 +79,9 @@ h1 {
         margin: 0;
     }
 }
+
+@media screen and (max-width: 25em) {
+    .title-container {
+        left: 9%;
+    }
+}
